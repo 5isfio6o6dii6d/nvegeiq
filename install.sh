@@ -35,14 +35,14 @@ themestall() {
 echo -e "${CYAN}=== PROSES INSTALASI ===${RESET}"
 
 GITHUB_TOKEN="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"
-REPO_URL="https://${GITHUB_TOKEN}@github.com/Sanzzdev/elytaller.git"
-TEMP_DIR="elytaller"
+REPO_URL="https://${GITHUB_TOKEN}@github.com/Sanzzdev/themoon.git"
+TEMP_DIR="themoon"
 
 git clone "$REPO_URL"
 sudo mv "$TEMP_DIR/ElysiumTheme.zip" /var/www/
 
 unzip -o /var/www/ElysiumTheme.zip -d /var/www/
-rm -r elytaller
+rm -r themoon
 rm /var/www/ElysiumTheme.zip
 
 sudo mkdir -p /etc/apt/keyrings
@@ -82,14 +82,14 @@ billingthme() {
 echo -e "${CYAN}=== PROSES INSTALASI ===${RESET}"
 
 GITHUB_TOKEN="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"
-REPO_URL="https://${GITHUB_TOKEN}@github.com/Sanzzdev/elytaller.git"
-TEMP_DIR="elytaller"
+REPO_URL="https://${GITHUB_TOKEN}@github.com/Sanzzdev/themoon.git"
+TEMP_DIR="themoon"
 
 git clone "$REPO_URL"
 sudo mv "$TEMP_DIR/ThemaBilling.zip" /var/www/
 
 unzip -o /var/www/ThemaBilling.zip -d /var/www/
-rm -r elytaller
+rm -r themoon
 rm /var/www/ThemaBilling.zip
 
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
